@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full scroll-smooth bg-[#F9F5F0] text-[#2B1E1A]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Karir & Rekrutmen - Mandala Policy Consulting</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paper: {
+                            50: '#FFFFFF',
+                            100: '#F9F5F0',
+                            200: '#F2EADF',
+                            300: '#E4D7C5',
+                            400: '#D2C0A8',
+                        },
+                        espresso: {
+                            500: '#5C4438',
+                            700: '#3D2A20',
+                            900: '#2B1E1A',
+                        },
+                        terracotta: {
+                            100: '#FAF0EC',
+                            200: '#F3D2C4',
+                            500: '#C25E3E',
+                            600: '#A84B2D',
+                            700: '#87391F',
+                        },
+                        sage: {
+                            100: '#EEF2EE',
+                            200: '#D3E0D4',
+                            600: '#5A7862',
+                            800: '#3A5241',
+                        },
+                        amber: {
+                            100: '#FEF3C7',
+                            800: '#92400E',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Lora"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .font-serif-title { font-family: 'Lora', serif; }
+        
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #F9F5F0; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #D2C0A8; border-radius: 999px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #C25E3E; }
+        
+        .paper-border { border-color: #E4D7C5; }
+        .editorial-pattern {
+            background-image: radial-gradient(#3D2A20 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="h-full flex flex-col bg-[#F9F5F0] text-[#2B1E1A] antialiased overflow-x-hidden selection:bg-terracotta-200 selection:text-terracotta-700">
+
+    <div class="bg-espresso-900 text-paper-200 text-xs py-2 px-4 text-center border-b border-espresso-700 flex justify-center items-center space-x-3">
+        <span class="inline-block w-2 h-2 rounded-full bg-terracotta-500 animate-ping"></span>
+        <span><strong>Rekrutmen Gelombang I 2026:</strong> Penerimaan Analis Kebijakan Junior & Senior Buka Hingga 28 Februari 2026</span>
+        <a href="#section-form" class="underline hover:text-white transition hidden sm:inline ml-2 font-medium">Daftar Sekarang &rarr;</a>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-paper-100/90 backdrop-blur-md border-b paper-border px-4 lg:px-12 py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center space-x-3 group">
+            <div class="w-10 h-10 rounded-lg bg-espresso-900 flex items-center justify-center text-paper-100 font-serif font-bold text-xl shadow-md group-hover:bg-terracotta-500 transition duration-300">
+                M
+            </div>
+            <div>
+                <span class="text-base font-serif font-bold tracking-tight text-espresso-900 block leading-none">Mandala Policy Consulting</span>
+                <span class="text-[11px] text-espresso-500 font-medium tracking-wide">Think Tank & Governance Advisory</span>
+            </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden md:flex items-center space-x-1 bg-paper-200/70 p-1.5 rounded-full border paper-border text-xs font-semibold text-espresso-700">
+            <a href="#section-hero" class="px-4 py-2 rounded-full hover:bg-paper-100 transition">Profil & Fit Check</a>
+            <a href="#section-clusters" class="px-4 py-2 rounded-full hover:bg-paper-100 transition">Kluster Kebijakan</a>
+            <a href="#section-catalog" class="px-4 py-2 rounded-full hover:bg-paper-100 transition">Katalog Posisi</a>
+            <a href="#section-lifecycle" class="px-4 py-2 rounded-full hover:bg-paper-100 transition">Ritme Kerja</a>
+            <a href="#section-form" class="px-4 py-2 rounded-full hover:bg-paper-100 transition">Formulir</a>
+        </nav>
+
+        <div class="flex items-center space-x-3">
+            <a href="#section-tracker" class="px-4 py-2 rounded-full border border-espresso-700 text-espresso-900 hover:bg-espresso-900 hover:text-paper-100 text-xs font-semibold transition flex items-center space-x-2">
+                <i data-lucide="search" class="w-3.5 h-3.5"></i>
+                <span>Cek Status</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1">
+
+        <section id="section-hero" class="relative overflow-hidden border-b paper-border pt-12 pb-16 px-4 lg:px-12 bg-gradient-to-b from-paper-100 via-paper-200/40 to-paper-100">
+            <div class="absolute inset-0 editorial-pattern pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                
+                <!-- Left Editorial Text -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-terracotta-100 border border-terracotta-200 text-terracotta-700 text-xs font-semibold">
+                        <i data-lucide="feather" class="w-3.5 h-3.5"></i>
+                        <span>Inisiatif Reformasi Birokrasi 2026</span>
+                    </div>
+
+                    <h1 class="text-3xl md:text-5xl lg:text-5xl font-serif text-espresso-900 leading-[1.15] font-bold">
+                        Sampaikan Gagasan Kebijakan. <br>
+                        <span class="italic font-normal text-terracotta-500">Kawal Reformasi Tata Kelola Publik.</span>
+                    </h1>
+
+                    <p class="text-sm md:text-base text-espresso-700 leading-relaxed max-w-xl font-normal">
+                        Mandala Policy Consulting mengundang perumus kebijakan muda dan senior untuk merancang rekomendasi strategis berbasis bukti kuantitatif bagi Kementerian, Lembaga, dan Pemerintah Daerah di seluruh Indonesia.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="#section-form" class="px-7 py-3.5 rounded-xl bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold text-xs text-center shadow-lg shadow-terracotta-500/20 transition flex items-center justify-center space-x-2">
+                            <span>Lamar Posisi Analis</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#section-catalog" class="px-7 py-3.5 rounded-xl bg-paper-100 hover:bg-paper-200 text-espresso-900 border paper-border font-semibold text-xs text-center transition">
+                            Lihat Kuota & Kualifikasi
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Footnote -->
+                    <div class="pt-6 border-t paper-border grid grid-cols-3 gap-4 text-left">
+                        <div>
+                            <span class="block font-serif text-2xl font-bold text-espresso-900">42+</span>
+                            <span class="text-[11px] text-espresso-500 font-medium">Policy Brief Diterapkan</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl font-bold text-espresso-900">18</span>
+                            <span class="text-[11px] text-espresso-500 font-medium">Mitra Pemda & K/L</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl font-bold text-espresso-900">12</span>
+                            <span class="text-[11px] text-espresso-500 font-medium">Formasi Gelombang I</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Fit Assessment Widget -->
+                <div class="lg:col-span-5">
+                    <div class="bg-paper-50 border paper-border rounded-2xl p-6 shadow-xl space-y-5 relative">
+                        <div class="absolute -top-3 right-6 bg-espresso-900 text-paper-100 text-[10px] uppercase tracking-wider font-semibold px-3 py-1 rounded-full">
+                            Kalkulator Kesesuaian
+                        </div>
+
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-espresso-900">Apakah Anda Cocok di MPC?</h3>
+                            <p class="text-xs text-espresso-500 mt-1">Gunakan alat cek cepat 10 detik ini sebelum mendaftar.</p>
+                        </div>
+
+                        <div class="space-y-4 text-xs">
+                            <div>
+                                <label class="block font-semibold text-espresso-800 mb-1.5">Latar Belakang Pendidikan Utama:</label>
+                                <select id="fit-edu" onchange="calcFitScore()" class="w-full bg-paper-100 border paper-border rounded-lg px-3 py-2 text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                                    <option value="relevant">Kebijakan Publik / Adm. Negara / Ekonomi / Hukum</option>
+                                    <option value="stem">Sains Data / Statistik / Teknik / Sosiologi</option>
+                                    <option value="other">Bidang Ilmu Lainnya</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block font-semibold text-espresso-800 mb-1.5">Pengalaman Tulis Kajian / Policy Brief:</label>
+                                <select id="fit-exp" onchange="calcFitScore()" class="w-full bg-paper-100 border paper-border rounded-lg px-3 py-2 text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                                    <option value="high">Pernah menerbitkan karya ilmiah / policy brief</option>
+                                    <option value="med">Skripsi/Tesis terkait evaluasi kebijakan publik</option>
+                                    <option value="low">Belum memiliki portofolio pembanding</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block font-semibold text-espresso-800 mb-1.5">Nilai IPK Terakhir:</label>
+                                <input type="number" id="fit-gpa" step="0.01" value="3.50" min="2.00" max="4.00" oninput="calcFitScore()" class="w-full bg-paper-100 border paper-border rounded-lg px-3 py-2 text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                            </div>
+                        </div>
+
+                        <!-- Result Box -->
+                        <div id="fit-result-box" class="p-4 rounded-xl bg-sage-100 border border-sage-200 space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs font-bold text-sage-800 uppercase tracking-wide">Rekomendasi Posisi:</span>
+                                <span id="fit-badge" class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-sage-600 text-white">Sangat Direkomendasikan</span>
+                            </div>
+                            <p id="fit-text" class="text-xs text-sage-800 leading-relaxed font-medium">
+                                Profil Anda sangat pas untuk mengisi formasi <strong>Analis Kebijakan Junior</strong> atau <strong>Senior</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section-clusters" class="py-16 px-4 lg:px-12 max-w-6xl mx-auto space-y-10">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-xs font-semibold text-terracotta-500 uppercase tracking-widest">Fokus Riset & Advis</span>
+                <h2 class="text-2xl md:text-3xl font-serif font-bold text-espresso-900">3 Kluster Kebijakan Utama Mandala</h2>
+                <p class="text-xs md:text-sm text-espresso-500 leading-relaxed">
+                    Sebagai analis di MPC, Anda akan ditempatkan pada kluster strategis dengan supervisi langsung pakar kebijakan publik senior.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Cluster 1 -->
+                <div class="bg-paper-50 border paper-border rounded-2xl p-6 hover:shadow-lg transition duration-300 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-terracotta-100 text-terracotta-600 flex items-center justify-center font-bold">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-espresso-900">Digital Governance & Reformasi SPBE</h3>
+                        <p class="text-xs text-espresso-700 leading-relaxed">
+                            Menganalisis efektivitas transformasi digital di birokrasi, interoperabilitas data antar lembaga, serta penyederhanaan regulasi pelayanan publik online.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t paper-border text-[11px] text-espresso-500 font-semibold flex items-center space-x-1">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5 text-sage-600"></i>
+                        <span>Mitra: KemenPANRB & Pemda Sektor Digital</span>
+                    </div>
+                </div>
+
+                <!-- Cluster 2 -->
+                <div class="bg-paper-50 border paper-border rounded-2xl p-6 hover:shadow-lg transition duration-300 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-sage-100 text-sage-600 flex items-center justify-center font-bold">
+                            <i data-lucide="coins" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-espresso-900">Otonomi Fiskal & Pendapatan Daerah</h3>
+                        <p class="text-xs text-espresso-700 leading-relaxed">
+                            Evaluasi Dampak Regulasi (RIA) UU HKPD, optimalisasi PAD kabupaten/kota, serta pemetaan insentif investasi daerah secara adil.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t paper-border text-[11px] text-espresso-500 font-semibold flex items-center space-x-1">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5 text-sage-600"></i>
+                        <span>Mitra: Kemenkeu & Bapenda Provinsi</span>
+                    </div>
+                </div>
+
+                <!-- Cluster 3 -->
+                <div class="bg-paper-50 border paper-border rounded-2xl p-6 hover:shadow-lg transition duration-300 space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold">
+                            <i data-lucide="scale" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold text-espresso-900">Simplifikasi Regulasi & Deregulasi</h3>
+                        <p class="text-xs text-espresso-700 leading-relaxed">
+                            Penyusunan naskah akademik, analisis kontradiksi norma perundang-undangan, dan advokasi kemudahan berusaha tingkat daerah.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t paper-border text-[11px] text-espresso-500 font-semibold flex items-center space-x-1">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5 text-sage-600"></i>
+                        <span>Mitra: BPHN & Bagian Hukum Pemda</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-catalog" class="py-16 px-4 lg:px-12 bg-paper-200/50 border-y paper-border">
+            <div class="max-w-6xl mx-auto space-y-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-semibold text-terracotta-500 uppercase tracking-widest">Katalog Karir</span>
+                        <h2 class="text-2xl md:text-3xl font-serif font-bold text-espresso-900 mt-1">Formasi Kebijakan Terbuka</h2>
+                        <p class="text-xs md:text-sm text-espresso-500">Pilih tingkat peran yang sesuai dengan pengalaman dan kualifikasi akademik Anda.</p>
+                    </div>
+                    <div class="bg-paper-100 border paper-border rounded-xl px-4 py-2 text-xs text-espresso-700 font-semibold self-start md:self-auto">
+                        Total Alokasi Kursi: <span class="text-terracotta-600 font-bold">12 Orang</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Role 1: Junior Policy Analyst -->
+                    <div class="bg-paper-50 border paper-border rounded-2xl p-7 space-y-6 flex flex-col justify-between hover:border-terracotta-500 transition duration-300 shadow-sm">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="px-3 py-1 rounded-full bg-sage-100 text-sage-800 text-[11px] font-bold border border-sage-200">
+                                        Formasi Full-Time (Junior)
+                                    </span>
+                                    <h3 class="text-2xl font-serif font-bold text-espresso-900 mt-3">Analis Kebijakan Junior</h3>
+                                    <p class="text-xs text-espresso-500">Divisi Riset & Evaluasi Kebijakan Daerah</p>
+                                </div>
+                                <div class="text-right bg-paper-100 p-3 rounded-xl border paper-border">
+                                    <span class="text-[10px] uppercase text-espresso-500 block font-semibold">Kuota</span>
+                                    <span class="text-2xl font-serif font-bold text-espresso-900">8 <span class="text-xs font-sans font-normal text-espresso-500">Orang</span></span>
+                                </div>
+                            </div>
+
+                            <p class="text-xs text-espresso-700 leading-relaxed">
+                                Bertanggung jawab melakukan riset sekunder, pengolahan data survei kuantitatif, wawancara mendalam dengan birokrat, serta penyusunan draf awal Policy Brief 5 halaman.
+                            </p>
+
+                            <div class="space-y-2 border-t paper-border pt-4 text-xs text-espresso-800">
+                                <div class="flex items-center space-x-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracotta-500"></i>
+                                    <span>Minimal <strong>S1</strong> Kebijakan Publik / Ekonomi / Hukum / Sosiologi</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracotta-500"></i>
+                                    <span>Batas IPK Minimal: <strong>3.25</strong> (Skala 4.00)</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracotta-500"></i>
+                                    <span>Gaji Est: <strong>Rp 8.500.000 - Rp 11.000.000</strong> / bulan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t paper-border flex items-center justify-between gap-3">
+                            <button onclick="openQualModal('junior')" class="text-xs font-semibold text-terracotta-600 hover:text-terracotta-700 underline underline-offset-4 flex items-center space-x-1">
+                                <i data-lucide="info" class="w-3.5 h-3.5"></i>
+                                <span>Detail Rubrik Kualifikasi</span>
+                            </button>
+                            <a href="#section-form" onclick="selectPosition('Analis Kebijakan Junior')" class="px-5 py-2.5 rounded-xl bg-espresso-900 hover:bg-espresso-700 text-paper-100 text-xs font-semibold transition">
+                                Pilih Posisi Ini
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Role 2: Senior Policy Analyst -->
+                    <div class="bg-paper-50 border paper-border rounded-2xl p-7 space-y-6 flex flex-col justify-between hover:border-terracotta-500 transition duration-300 shadow-sm">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="px-3 py-1 rounded-full bg-terracotta-100 text-terracotta-700 text-[11px] font-bold border border-terracotta-200">
+                                        Formasi Lead Consultant
+                                    </span>
+                                    <h3 class="text-2xl font-serif font-bold text-espresso-900 mt-3">Analis Kebijakan Senior</h3>
+                                    <p class="text-xs text-espresso-500">Divisi Advis Strategis & Pendampingan Pemda</p>
+                                </div>
+                                <div class="text-right bg-paper-100 p-3 rounded-xl border paper-border">
+                                    <span class="text-[10px] uppercase text-espresso-500 block font-semibold">Kuota</span>
+                                    <span class="text-2xl font-serif font-bold text-terracotta-600">4 <span class="text-xs font-sans font-normal text-espresso-500">Orang</span></span>
+                                </div>
+                            </div>
+
+                            <p class="text-xs text-espresso-700 leading-relaxed">
+                                Memimpin tim kajian, mempresentasikan rekomendasi eksekutif langsung ke Kepala Daerah / Menteri, serta mengawal implementasi pendampingan penyusunan Ranperda.
+                            </p>
+
+                            <div class="space-y-2 border-t paper-border pt-4 text-xs text-espresso-800">
+                                <div class="flex items-center space-x-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracotta-500"></i>
+                                    <span>Minimal <strong>S2 / S3</strong> Kebijakan Publik / Administrasi Negara</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracotta-500"></i>
+                                    <span>Batas IPK Minimal: <strong>3.50</strong> & Min. 3 Thn Pengalaman</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-terracotta-500"></i>
+                                    <span>Gaji Est: <strong>Rp 16.000.000 - Rp 22.000.000</strong> / bulan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t paper-border flex items-center justify-between gap-3">
+                            <button onclick="openQualModal('senior')" class="text-xs font-semibold text-terracotta-600 hover:text-terracotta-700 underline underline-offset-4 flex items-center space-x-1">
+                                <i data-lucide="info" class="w-3.5 h-3.5"></i>
+                                <span>Detail Rubrik Kualifikasi</span>
+                            </button>
+                            <a href="#section-form" onclick="selectPosition('Analis Kebijakan Senior')" class="px-5 py-2.5 rounded-xl bg-terracotta-500 hover:bg-terracotta-600 text-white text-xs font-semibold transition">
+                                Pilih Posisi Ini
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-lifecycle" class="py-16 px-4 lg:px-12 max-w-6xl mx-auto space-y-10">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-xs font-semibold text-terracotta-500 uppercase tracking-widest">Pengalaman Kerja</span>
+                <h2 class="text-2xl md:text-3xl font-serif font-bold text-espresso-900">Siklus Pembuatan Policy Brief di Mandala</h2>
+                <p class="text-xs md:text-sm text-espresso-500">Gambaran ritme proyek analitis selama 6 minggu yang akan Anda jalani.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-left">
+                <div class="bg-paper-50 p-5 rounded-2xl border paper-border space-y-3 relative">
+                    <span class="text-xs font-serif font-bold text-terracotta-500 block">Minggu 1 - 2</span>
+                    <h4 class="text-sm font-bold text-espresso-900">Framing Masalah & Studi Literatur</h4>
+                    <p class="text-xs text-espresso-700 leading-relaxed">
+                        Pengumpulan data kualitatif dan regulasi terkait. Menentukan instrumen survei dan indikator kinerja.
+                    </p>
+                </div>
+
+                <div class="bg-paper-50 p-5 rounded-2xl border paper-border space-y-3 relative">
+                    <span class="text-xs font-serif font-bold text-terracotta-500 block">Minggu 3</span>
+                    <h4 class="text-sm font-bold text-espresso-900">Fieldwork & Stakeholder Interview</h4>
+                    <p class="text-xs text-espresso-700 leading-relaxed">
+                        Wawancara lapangan dengan OPD (Organisasi Perangkat Daerah), akademisi lokal, dan asosiasi pelaku usaha.
+                    </p>
+                </div>
+
+                <div class="bg-paper-50 p-5 rounded-2xl border paper-border space-y-3 relative">
+                    <span class="text-xs font-serif font-bold text-terracotta-500 block">Minggu 4 - 5</span>
+                    <h4 class="text-sm font-bold text-espresso-900">Modelling & Drafting Brief</h4>
+                    <p class="text-xs text-espresso-700 leading-relaxed">
+                        Analisis data kuantitatif, uji ekonometrika sederhana, serta penyusunan pilihan opsi kebijakan publik.
+                    </p>
+                </div>
+
+                <div class="bg-paper-50 p-5 rounded-2xl border paper-border space-y-3 relative">
+                    <span class="text-xs font-serif font-bold text-terracotta-500 block">Minggu 6</span>
+                    <h4 class="text-sm font-bold text-espresso-900">Executive Roundtable Presentation</h4>
+                    <p class="text-xs text-espresso-700 leading-relaxed">
+                        Presentasi hasil rekomendasi kebijakan dalam forum diskusi terarah dengan pengambil keputusan tertinggi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-form" class="py-16 px-4 lg:px-12 bg-paper-200/40 border-t paper-border">
+            <div class="max-w-4xl mx-auto bg-paper-50 border paper-border rounded-3xl p-6 lg:p-10 shadow-lg space-y-8">
+                
+                <div class="border-b paper-border pb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-semibold text-terracotta-500 uppercase tracking-widest">Pendaftaran Online</span>
+                        <h2 class="text-2xl font-serif font-bold text-espresso-900 mt-1">Formulir Rekrutmen Analis Kebijakan</h2>
+                        <p class="text-xs text-espresso-500">Isi data pribadi dan unggah berkas kualifikasi dalam 4 langkah terpandu.</p>
+                    </div>
+
+                    <!-- Step Indicators -->
+                    <div class="flex items-center space-x-2 text-xs font-semibold">
+                        <span id="step-badge-1" class="px-3.5 py-1.5 rounded-full bg-espresso-900 text-paper-100">1. Data Diri</span>
+                        <span class="text-espresso-500">&rarr;</span>
+                        <span id="step-badge-2" class="px-3.5 py-1.5 rounded-full bg-paper-200 text-espresso-700">2. Akademik</span>
+                        <span class="text-espresso-500">&rarr;</span>
+                        <span id="step-badge-3" class="px-3.5 py-1.5 rounded-full bg-paper-200 text-espresso-700">3. Berkas</span>
+                        <span class="text-espresso-500">&rarr;</span>
+                        <span id="step-badge-4" class="px-3.5 py-1.5 rounded-full bg-paper-200 text-espresso-700">4. Review</span>
+                    </div>
+                </div>
+
+                <form id="appForm" onsubmit="event.preventDefault();" class="space-y-6">
+
+                    <!-- STEP 1: Personal Information -->
+                    <div id="step-1" class="form-step space-y-6">
+                        <div class="flex items-center space-x-2 border-b paper-border pb-3">
+                            <i data-lucide="user-check" class="w-5 h-5 text-terracotta-500"></i>
+                            <h3 class="font-serif text-base font-bold text-espresso-900">Langkah 1: Identitas Pelamar & Persetujuan Data (PDP)</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-espresso-800">Posisi Dituju <span class="text-terracotta-600">*</span></label>
+                                <select id="form-posisi" onchange="updateGpaRequirementLabel()" class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                                    <option value="Analis Kebijakan Junior">Analis Kebijakan Junior (Kuota 8 Kursi)</option>
+                                    <option value="Analis Kebijakan Senior">Analis Kebijakan Senior (Kuota 4 Kursi)</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-espresso-800">Nama Lengkap & Gelar (Sesuai KTP) <span class="text-terracotta-600">*</span></label>
+                                <input type="text" id="form-nama" placeholder="Contoh: Amanda Rahmawati, S.IP., M.A." class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-espresso-800">Alamat Email Aktif <span class="text-terracotta-600">*</span></label>
+                                <input type="email" id="form-email" placeholder="amanda.rahmawati@domain.id" class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-espresso-800">Nomor Telepon / WhatsApp <span class="text-terracotta-600">*</span></label>
+                                <input type="tel" id="form-hp" placeholder="081234567890" class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                            </div>
+                        </div>
+
+                        <!-- UU PDP Box -->
+                        <div class="bg-paper-100 border paper-border p-4 rounded-xl space-y-2">
+                            <div class="flex items-start space-x-3">
+                                <input type="checkbox" id="form-pdp" class="mt-1 w-4 h-4 text-terracotta-500 rounded border-paper-300 focus:ring-terracotta-500">
+                                <label for="form-pdp" class="text-xs text-espresso-700 leading-relaxed">
+                                    <strong>Persetujuan Pemrosesan Data Pribadi (UU No. 27/2022 - UU PDP):</strong><br>
+                                    Saya memberikan izin penuh kepada Mandala Policy Consulting untuk mengolah dan memverifikasi data diri, riwayat pendidikan, dan portofolio saya khusus untuk kepentingan proses rekrutmen ini secara akuntabel dan rahasia.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Academic & GPA Check -->
+                    <div id="step-2" class="form-step hidden space-y-6">
+                        <div class="flex items-center space-x-2 border-b paper-border pb-3">
+                            <i data-lucide="graduation-cap" class="w-5 h-5 text-terracotta-500"></i>
+                            <h3 class="font-serif text-base font-bold text-espresso-900">Langkah 2: Kualifikasi Akademik & Riset</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-espresso-800">Pendidikan Terakhir <span class="text-terracotta-600">*</span></label>
+                                <select id="form-pendidikan" class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                                    <option value="S1 - Sarjana">S1 - Sarjana (Kebijakan Publik / Ilmu Pemerintahan / Ekonomi / Hukum)</option>
+                                    <option value="S2 - Magister">S2 - Magister (Public Policy / MPKP / M.A. / M.Sc.)</option>
+                                    <option value="S3 - Doktoral">S3 - Doktoral Kebijakan Publik / Governance</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-espresso-800">Universitas / Perguruan Tinggi <span class="text-terracotta-600">*</span></label>
+                                <input type="text" id="form-univ" placeholder="Contoh: Universitas Indonesia / Universitas Gadjah Mada" class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                            </div>
+
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center">
+                                    <label class="block text-xs font-semibold text-espresso-800">Indeks Prestasi Kumulatif (IPK) <span class="text-terracotta-600">*</span></label>
+                                    <span id="gpa-req-badge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-terracotta-100 text-terracotta-700 font-bold border border-terracotta-200">
+                                        Min IPK: 3.25
+                                    </span>
+                                </div>
+                                <input type="number" step="0.01" min="0" max="4.00" id="form-ipk" placeholder="3.75" oninput="validateGpaLive()" class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                                <p id="gpa-error-msg" class="text-xs text-terracotta-600 hidden flex items-center space-x-1 mt-1">
+                                    <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i>
+                                    <span>Nilai IPK berada di bawah syarat minimum untuk posisi yang Anda pilih.</span>
+                                </p>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-espresso-800">Jumlah Karya Tulis / Policy Brief Diterbitkan</label>
+                                <input type="number" id="form-publikasi" min="0" value="1" class="w-full bg-paper-100 border paper-border rounded-xl px-4 py-3 text-xs text-espresso-900 focus:outline-none focus:border-terracotta-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Documents Drag and Drop -->
+                    <div id="step-3" class="form-step hidden space-y-6">
+                        <div class="flex items-center space-x-2 border-b paper-border pb-3">
+                            <i data-lucide="folder-up" class="w-5 h-5 text-terracotta-500"></i>
+                            <h3 class="font-serif text-base font-bold text-espresso-900">Langkah 3: Unggah Berkas Berkas & Portofolio (Drag & Drop)</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- File 1 -->
+                            <div onclick="simulateFileUpload('file-cv-status')" class="border-2 border-dashed paper-border rounded-2xl p-5 text-center bg-paper-100 hover:border-terracotta-500 transition cursor-pointer group">
+                                <i data-lucide="file-text" class="w-8 h-8 text-espresso-500 mx-auto mb-2 group-hover:scale-110 transition"></i>
+                                <span class="text-xs font-bold block text-espresso-900">Curriculum Vitae (CV Format ATS - PDF)</span>
+                                <span class="text-[10px] text-espresso-500 block mt-1">Klik untuk mensimulasikan unggah file (Max 5MB)</span>
+                                <span id="file-cv-status" class="inline-block mt-3 px-3 py-1 bg-sage-100 text-sage-800 border border-sage-200 text-[10px] font-bold rounded-lg">
+                                    Tersimpan: cv_amanda_2026.pdf
+                                </span>
+                            </div>
+
+                            <!-- File 2 -->
+                            <div onclick="simulateFileUpload('file-ijazah-status')" class="border-2 border-dashed paper-border rounded-2xl p-5 text-center bg-paper-100 hover:border-terracotta-500 transition cursor-pointer group">
+                                <i data-lucide="award" class="w-8 h-8 text-espresso-500 mx-auto mb-2 group-hover:scale-110 transition"></i>
+                                <span class="text-xs font-bold block text-espresso-900">Ijazah & Transkrip Akademik (PDF)</span>
+                                <span class="text-[10px] text-espresso-500 block mt-1">Dokumen pendidikan legal terlegalisir</span>
+                                <span id="file-ijazah-status" class="inline-block mt-3 px-3 py-1 bg-sage-100 text-sage-800 border border-sage-200 text-[10px] font-bold rounded-lg">
+                                    Tersimpan: ijazah_transkrip_ui.pdf
+                                </span>
+                            </div>
+
+                            <!-- File 3 -->
+                            <div onclick="simulateFileUpload('file-brief-status')" class="border-2 border-dashed paper-border rounded-2xl p-5 text-center bg-paper-100 hover:border-terracotta-500 transition cursor-pointer group">
+                                <i data-lucide="book-open" class="w-8 h-8 text-espresso-500 mx-auto mb-2 group-hover:scale-110 transition"></i>
+                                <span class="text-xs font-bold block text-espresso-900">Sampel Policy Brief / Makalah Kebijakan</span>
+                                <span class="text-[10px] text-espresso-500 block mt-1">Karya tulis independen atau tugas akhir</span>
+                                <span id="file-brief-status" class="inline-block mt-3 px-3 py-1 bg-sage-100 text-sage-800 border border-sage-200 text-[10px] font-bold rounded-lg">
+                                    Tersimpan: policy_brief_spbe_2025.pdf
+                                </span>
+                            </div>
+
+                            <!-- File 4 -->
+                            <div onclick="simulateFileUpload('file-lang-status')" class="border-2 border-dashed paper-border rounded-2xl p-5 text-center bg-paper-100 hover:border-terracotta-500 transition cursor-pointer group">
+                                <i data-lucide="languages" class="w-8 h-8 text-espresso-500 mx-auto mb-2 group-hover:scale-110 transition"></i>
+                                <span class="text-xs font-bold block text-espresso-900">Sertifikat Bahasa (TOEFL / IELTS - Opsional)</span>
+                                <span class="text-[10px] text-espresso-500 block mt-1">Bukti kemahiran bahasa Inggris</span>
+                                <span id="file-lang-status" class="inline-block mt-3 px-3 py-1 bg-sage-100 text-sage-800 border border-sage-200 text-[10px] font-bold rounded-lg">
+                                    Tersimpan: toefl_score_580.pdf
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: Review and Submit -->
+                    <div id="step-4" class="form-step hidden space-y-6">
+                        <div class="flex items-center space-x-2 border-b paper-border pb-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-terracotta-500"></i>
+                            <h3 class="font-serif text-base font-bold text-espresso-900">Langkah 4: Konfirmasi & Submit Pendaftaran</h3>
+                        </div>
+
+                        <div class="bg-paper-100 border paper-border rounded-2xl p-6 space-y-4 text-xs">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pb-4 border-b paper-border">
+                                <div>
+                                    <span class="text-espresso-500 block">Posisi Pilihan:</span>
+                                    <span id="summary-posisi" class="font-bold text-espresso-900 text-sm">-</span>
+                                </div>
+                                <div>
+                                    <span class="text-espresso-500 block">Nama Pelamar:</span>
+                                    <span id="summary-nama" class="font-bold text-espresso-900 text-sm">-</span>
+                                </div>
+                                <div>
+                                    <span class="text-espresso-500 block">IPK Terdaftar:</span>
+                                    <span id="summary-ipk" class="font-bold text-terracotta-600 text-sm">-</span>
+                                </div>
+                                <div>
+                                    <span class="text-espresso-500 block">Status Berkas:</span>
+                                    <span class="text-sage-800 font-bold text-sm">Lengkap (4 Berkas PDF)</span>
+                                </div>
+                            </div>
+                            <p class="text-espresso-700 leading-relaxed">
+                                Dengan mengklik tombol <strong>Kirim Pendaftaran Lamaran</strong>, berkas Anda akan langsung masuk ke Mesin Seleksi HRIS Mandala Policy Consulting dan Kartu Registrasi Unik akan otomatis terbit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="pt-4 border-t paper-border flex justify-between items-center">
+                        <button type="button" id="btn-prev" onclick="changeStep(-1)" class="px-6 py-2.5 rounded-xl bg-paper-200 hover:bg-paper-300 text-espresso-800 text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed transition">
+                            &larr; Kembali
+                        </button>
+                        <button type="button" id="btn-next" onclick="changeStep(1)" class="px-7 py-2.5 rounded-xl bg-terracotta-500 hover:bg-terracotta-600 text-white text-xs font-semibold shadow-md transition flex items-center space-x-2">
+                            <span>Lanjutkan</span>
+                            <span>&rarr;</span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <section id="section-tracker" class="py-16 px-4 lg:px-12 max-w-6xl mx-auto space-y-8">
+            <div class="bg-paper-50 border paper-border rounded-3xl p-8 shadow-sm space-y-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs font-semibold text-terracotta-500 uppercase tracking-widest">Pelacak Status Rekrutmen</span>
+                        <h2 class="text-xl md:text-2xl font-serif font-bold text-espresso-900 mt-1">Cek Progres Seleksi Lamaran</h2>
+                        <p class="text-xs text-espresso-500">Masukkan Nomor Registrasi Unik Anda (contoh: MPC-2026-JR001) untuk melihat status real-time.</p>
+                    </div>
+
+                    <div class="flex items-center space-x-2 w-full md:w-auto">
+                        <input type="text" id="tracker-input" placeholder="MPC-2026-JR001" class="bg-paper-100 border paper-border rounded-xl px-4 py-2.5 text-xs text-espresso-900 font-mono w-full md:w-64 focus:outline-none focus:border-terracotta-500">
+                        <button onclick="trackApplicant()" class="px-5 py-2.5 bg-espresso-900 hover:bg-espresso-700 text-paper-100 rounded-xl text-xs font-semibold transition">
+                            Lacak
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tracker Output Box -->
+                <div id="tracker-result" class="hidden bg-paper-100 border paper-border rounded-2xl p-6 space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between border-b paper-border pb-4 gap-2">
+                        <div>
+                            <span id="track-reg" class="font-mono text-xs text-terracotta-600 font-bold block">MPC-2026-JR001</span>
+                            <h4 id="track-nama" class="text-lg font-serif font-bold text-espresso-900">Amanda Rahmawati, S.IP., M.A.</h4>
+                            <p id="track-posisi" class="text-xs text-espresso-500">Analis Kebijakan Junior</p>
+                        </div>
+                        <div>
+                            <span id="track-badge" class="px-4 py-1.5 rounded-full text-xs font-bold bg-sage-100 text-sage-800 border border-sage-200">
+                                Berkas Lolos Verifikasi
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Milestone Pipeline -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                        <div class="p-4 bg-paper-50 rounded-xl border border-sage-300 space-y-1 shadow-sm">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-sage-600 mx-auto"></i>
+                            <span class="text-xs font-bold text-espresso-900 block">1. Registrasi</span>
+                            <span class="text-[10px] text-espresso-500 block">Dokumen Berhasil Masuk</span>
+                        </div>
+
+                        <div class="p-4 bg-paper-50 rounded-xl border border-sage-300 space-y-1 shadow-sm">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-sage-600 mx-auto"></i>
+                            <span class="text-xs font-bold text-espresso-900 block">2. Screening Berkas</span>
+                            <span class="text-[10px] text-espresso-500 block">IPK & Syarat Lolos</span>
+                        </div>
+
+                        <div class="p-4 bg-paper-50 rounded-xl border paper-border space-y-1">
+                            <i data-lucide="clock" class="w-5 h-5 text-terracotta-500 mx-auto animate-pulse"></i>
+                            <span class="text-xs font-bold text-espresso-900 block">3. Blind Case Test</span>
+                            <span class="text-[10px] text-espresso-500 block">Jadwal: 2 Maret 2026</span>
+                        </div>
+
+                        <div class="p-4 bg-paper-50 rounded-xl border paper-border space-y-1 opacity-50">
+                            <i data-lucide="award" class="w-5 h-5 text-espresso-500 mx-auto"></i>
+                            <span class="text-xs font-bold text-espresso-500 block">4. Final Offer</span>
+                            <span class="text-[10px] text-espresso-500 block">Keputusan Direksi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-espresso-900 text-paper-200 border-t border-espresso-700 py-12 px-4 lg:px-12 mt-12">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 text-xs">
+            <div class="md:col-span-5 space-y-3">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded bg-terracotta-500 flex items-center justify-center font-serif font-bold text-white text-lg">
+                        M
+                    </div>
+                    <span class="font-serif font-bold text-base text-white">Mandala Policy Consulting</span>
+                </div>
+                <p class="text-paper-300 leading-relaxed pr-6">
+                    Lembaga advokasi dan analisis kebijakan publik independen. Mendorong efisiensi birokrasi, digitalisasi pemerintahan, dan transparansi anggaran daerah.
+                </p>
+            </div>
+
+            <div class="md:col-span-3 space-y-2">
+                <span class="font-serif font-bold text-white text-sm block">Kontak Sekretariat</span>
+                <p class="text-paper-300 leading-relaxed">
+                    Gedung Mandala Policy Center Lt. 8<br>
+                    Jl. Jend. Sudirman Kav. 52-53, Jakarta Selatan<br>
+                    Email: rekrutmen@mandalapolicy.id
+                </p>
+            </div>
+
+            <div class="md:col-span-4 space-y-2 text-right md:text-right">
+                <span class="font-serif font-bold text-white text-sm block">Sistem HRIS Terintegrasi</span>
+                <p class="text-paper-300">
+                    &copy; 2026 Mandala Policy Consulting.<br>
+                    Seluruh hak cipta dilindungi undang-undang.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="qualModal" class="fixed inset-0 z-50 hidden bg-espresso-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-paper-50 border paper-border rounded-3xl max-w-2xl w-full p-6 lg:p-8 space-y-6 shadow-2xl relative">
+            <button onclick="closeQualModal()" class="absolute top-5 right-5 text-espresso-500 hover:text-espresso-900">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div>
+                <span class="text-[10px] font-bold text-terracotta-500 uppercase tracking-widest block">Matriks Rubrik Penilaian</span>
+                <h3 id="qual-modal-title" class="text-xl font-serif font-bold text-espresso-900 mt-1">Detail Kualifikasi Analis Kebijakan</h3>
+                <p class="text-xs text-espresso-500">Perbandingan Kualifikasi Minimum vs. Kualifikasi Pembeda (Bobot Bonus)</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse text-xs">
+                    <thead>
+                        <tr class="bg-paper-200 text-espresso-900 font-serif font-bold border-b paper-border">
+                            <th class="p-3">Kategori Kriteria</th>
+                            <th class="p-3">Kualifikasi Minimum</th>
+                            <th class="p-3">Kualifikasi Pembeda (Nilai Tambah)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y paper-border text-espresso-800">
+                        <tr>
+                            <td class="p-3 font-semibold text-espresso-900">Pendidikan & IPK</td>
+                            <td class="p-3" id="qual-min-edu">S1 (IPK Min 3.25)</td>
+                            <td class="p-3" id="qual-diff-edu">S2/S3 Lulusan PTN Unggul / Luar Negeri (Bobot 20%)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-espresso-900">Pengalaman Riset</td>
+                            <td class="p-3" id="qual-min-exp">Minimal 1 Tahun / Fresh Grad</td>
+                            <td class="p-3" id="qual-diff-exp">Memiliki Publikasi Jurnal / Policy Brief Pemda (Bobot 25%)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-espresso-900">Bahasa & Olah Data</td>
+                            <td class="p-3">TOEFL &ge; 500 / Pasif</td>
+                            <td class="p-3">Keterampilan Stata / R / Python untuk Data Publik (Bobot 15%)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pt-4 border-t paper-border flex justify-end">
+                <button onclick="closeQualModal()" class="px-5 py-2 rounded-xl bg-paper-200 hover:bg-paper-300 text-espresso-900 text-xs font-semibold">
+                    Tutup Detail
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-espresso-900 text-paper-100 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center space-x-3 transition-all duration-300 border border-espresso-700">
+        <i data-lucide="check-circle-2" class="w-5 h-5 text-terracotta-500"></i>
+        <span id="toast-message" class="text-xs font-semibold">Notifikasi Sistem</span>
+    </div>
+
+    <script>
+        // Database Applicants Initial State
+        let applicantsState = [
+            {
+                id: 'MPC-2026-JR001',
+                nama: 'Amanda Rahmawati, S.IP., M.A.',
+                posisi: 'Analis Kebijakan Junior',
+                ipk: 3.85,
+                statusVerifikasi: 'Berkas Lolos Verifikasi'
+            },
+            {
+                id: 'MPC-2026-SR001',
+                nama: 'Dr. Hendra Wijaya, M.P.A.',
+                posisi: 'Analis Kebijakan Senior',
+                ipk: 3.92,
+                statusVerifikasi: 'Berkas Lolos Verifikasi'
+            }
+        ];
+
+        let currentFormStep = 1;
+
+        window.onload = function() {
+            lucide.createIcons();
+            updateGpaRequirementLabel();
+            calcFitScore();
+        };
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-message').innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        function calcFitScore() {
+            const edu = document.getElementById('fit-edu').value;
+            const exp = document.getElementById('fit-exp').value;
+            const gpa = parseFloat(document.getElementById('fit-gpa').value || 0);
+
+            const badge = document.getElementById('fit-badge');
+            const text = document.getElementById('fit-text');
+
+            if (edu === 'relevant' && (exp === 'high' || exp === 'med') && gpa >= 3.25) {
+                badge.className = 'px-2.5 py-0.5 rounded text-[10px] font-bold bg-sage-600 text-white';
+                badge.innerText = 'Sangat Direkomendasikan';
+                text.innerHTML = 'Profil Anda sangat cocok untuk mengisi posisi <strong>Analis Kebijakan Junior</strong> atau <strong>Senior</strong>.';
+            } else if (gpa < 3.25) {
+                badge.className = 'px-2.5 py-0.5 rounded text-[10px] font-bold bg-terracotta-500 text-white';
+                badge.innerText = 'IPK Perlu Ditingkatkan';
+                text.innerHTML = 'Syarat IPK minimum di Mandala Policy Consulting adalah <strong>3.25</strong> untuk Junior dan <strong>3.50</strong> untuk Senior.';
+            } else {
+                badge.className = 'px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-800 text-white';
+                badge.innerText = 'Potensial dengan Penyesuaian';
+                text.innerHTML = 'Disarankan menyertakan sampel karya tulis kebijakan untuk memperkuat berkas pendaftaran Anda.';
+            }
+        }
+
+        function selectPosition(posName) {
+            document.getElementById('form-posisi').value = posName;
+            updateGpaRequirementLabel();
+        }
+
+        function updateGpaRequirementLabel() {
+            const pos = document.getElementById('form-posisi').value;
+            const badge = document.getElementById('gpa-req-badge');
+            if (pos === 'Analis Kebijakan Senior') {
+                badge.innerText = 'Min IPK: 3.50';
+            } else {
+                badge.innerText = 'Min IPK: 3.25';
+            }
+            validateGpaLive();
+        }
+
+        function validateGpaLive() {
+            const pos = document.getElementById('form-posisi').value;
+            const val = parseFloat(document.getElementById('form-ipk').value || 0);
+            const errorMsg = document.getElementById('gpa-error-msg');
+            const target = pos === 'Analis Kebijakan Senior' ? 3.50 : 3.25;
+
+            if (val > 0 && val < target) {
+                errorMsg.classList.remove('hidden');
+                return false;
+            } else {
+                errorMsg.classList.add('hidden');
+                return true;
+            }
+        }
+
+        function changeStep(direction) {
+            if (direction === 1) {
+                if (currentFormStep === 1) {
+                    const nama = document.getElementById('form-nama').value;
+                    const email = document.getElementById('form-email').value;
+                    const pdp = document.getElementById('form-pdp').checked;
+
+                    if (!nama || !email) {
+                        showToast('Harap isi Nama Lengkap dan Email terlebih dahulu!');
+                        return;
+                    }
+                    if (!pdp) {
+                        showToast('Persetujuan Pemrosesan Data (UU PDP) wajib dicentang!');
+                        return;
+                    }
+                } else if (currentFormStep === 2) {
+                    const ipk = parseFloat(document.getElementById('form-ipk').value || 0);
+                    const pos = document.getElementById('form-posisi').value;
+                    const minIpk = pos === 'Analis Kebijakan Senior' ? 3.50 : 3.25;
+
+                    if (ipk < minIpk) {
+                        showToast(`Batas IPK minimal untuk ${pos} adalah ${minIpk}`);
+                        return;
+                    }
+                }
+            }
+
+            currentFormStep += direction;
+            if (currentFormStep < 1) currentFormStep = 1;
+            if (currentFormStep > 4) currentFormStep = 4;
+
+            // Render Steps
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`step-${i}`).classList.add('hidden');
+                const badge = document.getElementById(`step-badge-${i}`);
+                badge.className = 'px-3.5 py-1.5 rounded-full bg-paper-200 text-espresso-700';
+            }
+
+            document.getElementById(`step-${currentFormStep}`).classList.remove('hidden');
+            document.getElementById(`step-badge-${currentFormStep}`).className = 'px-3.5 py-1.5 rounded-full bg-espresso-900 text-paper-100';
+
+            // Button label updates
+            const btnNext = document.getElementById('btn-next');
+            if (currentFormStep === 4) {
+                btnNext.innerHTML = `<span>Kirim Pendaftaran Lamaran</span> <i data-lucide="send" class="w-4 h-4 inline"></i>`;
+                btnNext.onclick = submitApplication;
+
+                document.getElementById('summary-posisi').innerText = document.getElementById('form-posisi').value;
+                document.getElementById('summary-nama').innerText = document.getElementById('form-nama').value;
+                document.getElementById('summary-ipk').innerText = document.getElementById('form-ipk').value;
+            } else {
+                btnNext.innerHTML = `<span>Lanjutkan</span> <span>&rarr;</span>`;
+                btnNext.onclick = function() { changeStep(1); };
+            }
+
+            document.getElementById('btn-prev').disabled = (currentFormStep === 1);
+            lucide.createIcons();
+        }
+
+        function simulateFileUpload(elementId) {
+            const el = document.getElementById(elementId);
+            el.innerText = 'Berkas Berhasil Diunggah!';
+            el.className = 'inline-block mt-3 px-3 py-1 bg-sage-100 text-sage-800 border border-sage-200 text-[10px] font-bold rounded-lg animate-bounce';
+            setTimeout(() => {
+                el.classList.remove('animate-bounce');
+            }, 1000);
+            showToast('Berkas dokumen berhasil disimulasikan');
+        }
+
+        function submitApplication() {
+            const pos = document.getElementById('form-posisi').value;
+            const nama = document.getElementById('form-nama').value;
+            const ipk = parseFloat(document.getElementById('form-ipk').value || 3.75);
+
+            const isSenior = pos.includes('Senior');
+            const count = applicantsState.length + 1;
+            const newRegId = `MPC-2026-${isSenior ? 'SR' : 'JR'}${String(count).padStart(3, '0')}`;
+
+            const newApplicant = {
+                id: newRegId,
+                nama: nama,
+                posisi: pos,
+                ipk: ipk,
+                statusVerifikasi: 'Berkas Lolos Verifikasi'
+            };
+
+            applicantsState.push(newApplicant);
+
+            showToast(`Lamaran Terkirim! Nomor Registrasi Anda: ${newRegId}`);
+
+            // Reset step
+            currentFormStep = 1;
+            changeStep(0);
+            document.getElementById('appForm').reset();
+
+            // Populate Tracker with new Reg ID
+            document.getElementById('tracker-input').value = newRegId;
+            trackApplicant();
+
+            // Smooth Scroll to tracker
+            document.getElementById('section-tracker').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function trackApplicant() {
+            const regInput = document.getElementById('tracker-input').value.trim();
+            const resultBox = document.getElementById('tracker-result');
+
+            const applicant = applicantsState.find(a => a.id.toLowerCase() === regInput.toLowerCase() || a.nama.toLowerCase().includes(regInput.toLowerCase()));
+
+            if (!applicant) {
+                showToast('Nomor Registrasi atau Nama tidak ditemukan di database.');
+                resultBox.classList.add('hidden');
+                return;
+            }
+
+            document.getElementById('track-reg').innerText = applicant.id;
+            document.getElementById('track-nama').innerText = applicant.nama;
+            document.getElementById('track-posisi').innerText = applicant.posisi;
+            document.getElementById('track-badge').innerText = applicant.statusVerifikasi;
+
+            resultBox.classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function openQualModal(type) {
+            const modal = document.getElementById('qualModal');
+            const title = document.getElementById('qual-modal-title');
+
+            if (type === 'senior') {
+                title.innerText = 'Detail Rubrik Kualifikasi Analis Kebijakan Senior';
+                document.getElementById('qual-min-edu').innerText = 'S2 / S3 Kebijakan Publik / MPKP (IPK Min 3.50)';
+                document.getElementById('qual-diff-edu').innerText = 'Gelar Doktoral (S3) & Sertifikasi Analis Kebijakan (Bobot 20%)';
+                document.getElementById('qual-min-exp').innerText = 'Minimal 3 Tahun Advokasi Kebijakan / Pendampingan Pemda';
+                document.getElementById('qual-diff-exp').innerText = 'Pengalaman Lead Consultant Proyek KemenLembaga / Pemda (Bobot 25%)';
+            } else {
+                title.innerText = 'Detail Rubrik Kualifikasi Analis Kebijakan Junior';
+                document.getElementById('qual-min-edu').innerText = 'S1 Kebijakan Publik / Ekonomi / Hukum (IPK Min 3.25)';
+                document.getElementById('qual-diff-edu').innerText = 'S2 Lulusan Luar Negeri / PTN Akreditasi Unggul (Bobot 20%)';
+                document.getElementById('qual-min-exp').innerText = 'Fresh Graduate atau Minimal 1 Tahun Riset';
+                document.getElementById('qual-diff-exp').innerText = 'Portofolio Policy Brief / Makalah Riset Publikasi (Bobot 25%)';
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeQualModal() {
+            document.getElementById('qualModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
